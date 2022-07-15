@@ -6,12 +6,17 @@ import com.solid.srp.utilities.LatePaymentInterest;
 
 
 public class Payment {
-    LatePaymentInterest LatePaymentInterestCal;
+    private LatePaymentInterest latePaymentInterestCal;
     public static final int MAX_DAYS = 14;
+
+    public Payment(LatePaymentInterest latePaymentInterestCal){
+        this.latePaymentInterestCal = latePaymentInterestCal;
+
+    }
 
     public void batch(List<Customer> customers){
         for(Customer customer: customers){
-            int nDays = LatePaymentInterestCal.latePaymentDays(customer);
+            int nDays = latePaymentInterestCal.latePaymentDays(customer);
             if(nDays >= MAX_DAYS){
                 applyLatePaymentInterest(customer);
             }

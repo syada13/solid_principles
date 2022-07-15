@@ -18,12 +18,17 @@ This scenario is a clear example of how this Class design violates the Single Re
 The Payment class has more than one reason to change and breaks the Payments team's business logic if they accept the Cards team's requirement.
 */
 public class Payment {
-    LatePaymentInterest LatePaymentInterestCal;
+    private LatePaymentInterest latePaymentInterestCal;
     public static final int MAX_DAYS = 14;
+
+    public Payment(LatePaymentInterest latePaymentInterestCal){
+        this.latePaymentInterestCal = latePaymentInterestCal;
+
+    }
     
     public void batch(List<Customer> customers){
         for (Customer customer: customers){
-            int nDays = LatePaymentInterestCal.latePaymentDays(customer);
+            int nDays = latePaymentInterestCal.latePaymentDays(customer);
             if(nDays >= MAX_DAYS){
                 applyLatePaymentInterest(customer);
                 lockcard(customer);
