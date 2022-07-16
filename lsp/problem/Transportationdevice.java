@@ -8,6 +8,7 @@ public class Transportationdevice {
     private String name;
     private double speed;
     private String engineType;
+    private int price;
    
     public String getName() {
         return name;
@@ -29,7 +30,7 @@ public class Transportationdevice {
     }
 
     public int calculateTransportationDevicePriceBasedOnEngineType(String engineType){
-        return 0;
+        return price;
     }
 
 
