@@ -37,7 +37,7 @@ public class Transportationdevice {
     }
 
     public int calculateTransportationDevicePriceBasedOnEngineType(String engineType){
-        return price;
+        return getPrice();
     }
 
 
