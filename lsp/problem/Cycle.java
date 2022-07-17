@@ -1,7 +1,7 @@
 package lsp.problem;
 /* 
 The Cycle class is a child of the Transportationdevice , and donen't have the engine type.
-So, it can't calculate true price of Cycle.If it overrides the calculateTransportationDevicePriceBasedOnEngineType method, it violates SLP. 
+So, it can't calculate true price of Cycle.If it overrides the calculateTransportationDevicePriceBasedOnEngineType method, it violates LSP. 
 */
 public class Cycle extends Transportationdevice {
     int price = 0;

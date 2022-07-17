@@ -1,0 +1,4 @@
+Liscove Substitution Principle(LSP).
+ 1.Child should be able to do what parent can do.
+ 2.It helps to avoid unneccessary usage of inheritance and conforms to IS-A relationship. 
+ 3.Basically, it educated us when we should use inmheritence and when not to.
