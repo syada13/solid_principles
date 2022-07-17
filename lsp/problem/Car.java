@@ -1,7 +1,7 @@
 package lsp.problem;
 
 public class Car extends Transportationdevice{
-    public int price = 50000;
+     int price = 50000;
 
     @Override
     public int calculateTransportationDevicePriceBasedOnEngineType(String engineType){
