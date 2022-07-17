@@ -14,10 +14,10 @@ public class CreditCard {
     }
 
     public void validate() throws Exception {
-       // Validation logic implementation
+       // Credit card validation logic implementation
     }
     
     public void makePayment(double amount) throws Exception{
-        // Make payment implementation
+        // Make payment with credit card implementation
     }
 }
